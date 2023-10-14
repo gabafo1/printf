@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is a project focused on handling various conversion specifiers and flag characters in C programming. It aims to demonstrate the effective use of these components in creating formatted outputs. 
+This is a project focused on ALX participation in group task and understanding in the process of printf
 
 ## Contributors
 
@@ -10,6 +10,9 @@ This is a project focused on handling various conversion specifiers and flag cha
 - Oloruntoba Ayodeji
 
 ## Instructions
+
+0. You can print that wherever you want to. I'm here and I'm a Spur for life 
+   - Write a function that produces output according to a format. 
 
 1. Education is when you read the fine print. Experience is what you get if you don't.
    - Handle the following conversion specifiers: `%d`, `%i`, `%u`, `%o`, `%x`, `%X`.
