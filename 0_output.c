@@ -9,5 +9,8 @@
 int _printf(const char *format, ...)
 {
 	va_list output;
-	in
+	int prt_char = 0;
+
+	if (*format == NULL)
+		return (-1);
 }
