@@ -1,5 +1,7 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdarg.h>
+#include <unistd.h>
 /**
  * _printf - produces output according to a format
  * @format: character string
@@ -11,10 +13,9 @@ int _printf(const char *format, ...)
 	va_list output;
 	int prt_char = 0;
 	char *str;
-	int strg_ln;
 	int strg_ln = 0;
 
-	if (*format == NULL)
+	if (format == NULL)
 		return (-1);
 	va_start(output, format);
 	while (*format)
@@ -38,9 +39,9 @@ int _printf(const char *format, ...)
 			{
 				str = va_arg(output, char*);
 				while (str[strg_ln] != '\0')
-					strg_len++;
+					strg_ln++;
 				write(1, str, strg_ln);
-				output = output + strg_ln;
+				prt_char += strg_ln;
 			}
 		}
 		format++;

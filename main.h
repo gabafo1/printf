@@ -1,11 +1,10 @@
 #ifndef MAIN_H
 #define MAIN_H
 #include <string.h>
+#include "main.h"
 #include <stdarg.h>
-#include <stdarg.h>
-#include <stdio.h>
-#include <unistd.h>
 
+int _putchar(char c);
 #define UNUSED(x) (void)(x)
 #define BUFF_SIZE 1024
 
@@ -41,7 +40,6 @@ struct fmt
  */
 typedef struct fmt fmt_t;
 
->>>>>>> 0172a0e0c66d6b11b12560c13661ddceaaccf46a
 int _printf(const char *format, ...);
 int handle_print(const char *fmt, int *i,
 va_list list, char buffer[], int flags, int width, int precision, int size);
